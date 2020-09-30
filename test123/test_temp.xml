@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite-1" parallel="tests" thread-count="2">
+
+    
+	
+	<test name="SPAPI number Test" preserve-order="true" parallel="false">
+	<parameter name="browser" value="chrome" />	
+		<parameter name="user" value="ggarde" />
+		<parameter name="pass" value="ChangeMe1"/>
+		<classes>
+
+			<class name="tests.AWSCallingClass">
+
+			<methods>
+			<include name="shoutPointNumberCall"></include>
+			</methods>
+            </class>
+
+		</classes>
+	</test>
+
+	<test name="SIP number test" preserve-order="true" parallel="false">
+	<parameter name="browser" value="chrome" />
+				<parameter name="user" value="pratikd"/>
+		<parameter name="pass" value="connectMe123"/>
+		<classes>
+
+			<class name="tests.AWSCallingClass">
+
+			<methods>
+			<include name="sipNumberCall"></include>
+			</methods>
+            </class>
+
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->

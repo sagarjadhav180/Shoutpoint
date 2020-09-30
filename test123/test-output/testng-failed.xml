@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite-1]" parallel="tests">
+  <parameter name="pass" value="connectMe123"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="user" value="pratikd"/>
+  <test name="SPAPI number Test">
+    <parameter name="pass" value="ChangeMe1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="user" value="ggarde"/>
+    <classes>
+      <class name="tests.AWSCallingClass">
+        <methods>
+          <include name="shoutPointNumberCall"/>
+        </methods>
+      </class> <!-- tests.AWSCallingClass -->
+    </classes>
+  </test> <!-- SPAPI number Test -->
+  <test name="SIP number test">
+    <parameter name="pass" value="connectMe123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="user" value="pratikd"/>
+    <classes>
+      <class name="tests.AWSCallingClass">
+        <methods>
+          <include name="sipNumberCall"/>
+        </methods>
+      </class> <!-- tests.AWSCallingClass -->
+    </classes>
+  </test> <!-- SIP number test -->
+  <test name="SPAPI number Test(failed)">
+    <parameter name="pass" value="ChangeMe1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="user" value="ggarde"/>
+    <classes>
+      <class name="tests.AWSCallingClass">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="shoutPointNumberCall"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.AWSCallingClass -->
+    </classes>
+  </test> <!-- SPAPI number Test(failed) -->
+  <test name="SIP number test(failed)">
+    <parameter name="pass" value="connectMe123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="user" value="pratikd"/>
+    <classes>
+      <class name="tests.AWSCallingClass">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="sipNumberCall"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.AWSCallingClass -->
+    </classes>
+  </test> <!-- SIP number test(failed) -->
+</suite> <!-- Failed suite [Automation Suite-1] -->

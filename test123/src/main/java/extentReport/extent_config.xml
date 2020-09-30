@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    
+    <!-- custom javascript -->
+    <scripts>
+      <![CDATA[
+      ]]>
+        $(document).ready(function() {
+          $("body").addClass("dark");
+        });
+    </scripts>
+  </configuration>
+</extentreports>

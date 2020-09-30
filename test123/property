@@ -1,0 +1,10 @@
+url=https://stag-5-cmo-1.convirza.com
+username=newac@yopmail.com
+password=lmc2demo
+Environment=stag-5
+
+
+
+reservenumberendpoint=https://stag-5-cfaapi-1.convirza.com/v2/number/reserve
+authtokenendpoint=https://stag-5-cfaapi-1.convirza.com/oauth/token
+getnumberendpoint=https://stag-5-cfaapi-1.convirza.com/v2/number/search
