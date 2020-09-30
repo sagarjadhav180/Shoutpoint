@@ -138,7 +138,9 @@ public class TestBase
 			 ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
 			 driver = new ChromeDriver(options);
-			 
+			 extent.loadConfig(new File(".//src//main//java//extentReport//extent_config.xml"));
+			 AWSCallingClass cl=new AWSCallingClass();
+			 cl.setUPAWS(user, pass);
 			}
 
 		wait= new WebDriverWait(driver,60);
